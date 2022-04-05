@@ -27,3 +27,4 @@ function concatenate ($edad, $espacio){
 }
 bodega_correspondiente($edades);
 ?>
+
