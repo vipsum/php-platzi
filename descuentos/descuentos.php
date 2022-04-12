@@ -1,6 +1,11 @@
 <?php
-echo "Hay un descuento del 35% en todas nuestras prendas! Inserta el valor del producto para ver su precio con descuento";
+$price = $_REQUEST['price'];
+$discount = 0.35;
+function descuento35 ($precio, $descuento) {
+   global $price, $discount;
+    $priceWithDiscount = $price - ($price*$discount);
+    return $priceWithDiscount;
+}
+echo descuento35($price, $discount);
 
-echo "<input type='number'>
-    <button type='submit'>Enviar</button> ";
 ?>

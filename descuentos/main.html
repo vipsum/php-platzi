@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Pepito</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <h1>Toda la tienda está en SALE! 35% off. </h1>
     <h2>Ingresa el valor de tu producto para ver su precio con descuento.</h2>
-    <form method="get" action="descuentos.php">
-        <input type="number" placeholder="Precio" name="price">
-    </form>
-    <button type="submit">Ver Descuentos</button>
+    <input type="number" placeholder="Precio" name="price" id="precio">  
+    <button type="submit" id="boton" onclick="seeDiscount()">Ver Descuento</button>
+    <h5 id="finalPrice"></h5>
+    <script src="discount.js"></script>
 </body>
 </html>
